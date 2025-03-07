@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvMain"
+        android:layout_width="match_parent"
+        android:layout_height="94dp"
+        android:background="@color/material_dynamic_tertiary60"
+        android:paddingHorizontal="@dimen/text_size_main"
+        android:paddingVertical="@dimen/text_size_main"
+        android:text="@string/YourRecommendation"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_main" />
+
+    <TextView
+        android:id="@+id/tvrecommend"
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:paddingHorizontal="@dimen/padding_main_top"
+        android:paddingVertical="@dimen/text_size_main"
+        android:textSize="@dimen/text_size_main" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="264dp"
+        app:srcCompat="@drawable/bck" />
+
+    <TextView
+        android:id="@+id/tvsbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Did you liked the piece?" />
+
+    <SeekBar
+        android:id="@+id/sb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="3"
+        android:progress="1"
+        android:progressTint="#FF9800"
+        android:thumb="@android:drawable/presence_audio_away" />
+
+    <Button
+        android:id="@+id/btnback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go Back" />
+
+    <Button
+        android:id="@+id/btnshowdetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show Details" />
+
+
+
+</LinearLayout>

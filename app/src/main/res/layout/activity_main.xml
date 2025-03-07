@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:background="@color/teal_200"
+        android:gravity="center_horizontal"
+        android:paddingVertical="@dimen/padding_main_top"
+        android:text="@string/mainName"
+        android:textColorLink="@color/design_default_color_on_secondary"
+        android:textSize="@dimen/text_size_main" />
+
+    <EditText
+        android:id="@+id/etname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="Name:"
+        android:ems="10"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/tvinstr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Your Instrument"
+        android:textSize="@dimen/valSizes" />
+    <ImageView
+        android:id="@+id/ivinstr"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        app:srcCompat="@drawable/piano" />
+
+    <RadioGroup
+        android:id="@+id/rginstr"
+        android:layout_width="match_parent"
+        android:layout_height="169dp" >
+
+        <RadioButton
+            android:id="@+id/rbpiano"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Piano" />
+
+        <RadioButton
+            android:id="@+id/rbviolin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Violin" />
+
+        <RadioButton
+            android:id="@+id/rbflute"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Flute" />
+    </RadioGroup>
+
+
+
+    <Button
+        android:id="@+id/btncont"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CONTINUE" />
+
+    <TextView
+        android:id="@+id/tvchose"
+        android:layout_width="match_parent"
+        android:layout_height="82dp" />
+
+
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_main">22dp</dimen>
+    <dimen name="text_size_main">26sp</dimen>
+    <dimen name="padding_main_top">12dp</dimen>
+    <dimen name="valSizes">17dp</dimen>
+</resources>

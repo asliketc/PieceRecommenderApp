@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvFirst"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/teal_700"
+        android:textSize="@dimen/valSizes" />
+
+    <TextView
+        android:id="@+id/tvNew"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/teal_700"
+        android:textSize="@dimen/valSizes" />
+
+    <TextView
+        android:id="@+id/tvEra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/padding_main_top"
+        android:text="Choose Your Level"
+        android:textSize="@dimen/valSizes" />
+
+    <Spinner
+        android:id="@+id/spinLevel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/ivLevel"
+        android:layout_width="match_parent"
+        android:layout_height="213dp"
+        app:srcCompat="@drawable/beginner" />
+
+    <TextView
+        android:id="@+id/tvEras"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/padding_main"
+        android:text="Choose Which Era You Want?" />
+    <Spinner
+        android:id="@+id/spinEra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/ivEra"
+        android:layout_width="match_parent"
+        android:layout_height="194dp"
+        app:srcCompat="@drawable/barok" />
+
+    <Button
+        android:id="@+id/btnRec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Your Piece Recommendation" />
+
+</LinearLayout>
